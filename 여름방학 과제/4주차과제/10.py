@@ -10,4 +10,4 @@ for i in range(k):
 	nextList = []
 
 for i in nlist:
-	print(i, end = " ")
+	print(i, end = " ") 
