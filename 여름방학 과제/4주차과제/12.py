@@ -1,6 +1,5 @@
 n = int(input())
 numArr = []
-max = 0
 result = []
 
 for i in range(n):
@@ -9,12 +8,9 @@ for i in range(n):
 		if len(numArr) == 0:
 			result.append('-1')
 		else:
-			for idx, value in enumerate(numArr):
-				if value > max:
-					max = value
-					idxx = idx
-			result.append(numArr.pop(idxx))
-			max = 0
+			maxValue = max(numArr)
+			maxIdx = numArr.index(maxValue)
+			result.append(numArr.pop(maxIdx))
 	else:
 		numArr.append(num)
 
