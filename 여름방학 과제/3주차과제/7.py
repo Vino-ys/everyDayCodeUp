@@ -15,4 +15,7 @@ for i in list:
 		print(len(stack))
 		
 	elif commend == 'POP':
-		print(stack.pop())
+		if len(stack) == 0:
+			print('-1')
+		else:
+			print(stack.pop())
